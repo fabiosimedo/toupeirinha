@@ -1,0 +1,61 @@
+.quadrado{
+  width: 200px; height: 200px;
+  border: solid 1px black;
+}
+.grid{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 610px;
+  margin: 10px; 
+}
+h1,h2{
+  margin: .5rem 20px; 
+}
+.mole{
+  background-image: url('img/whac-a-mole.jpg');
+  background-size: cover;
+}
+.alerta{
+  background-color: tomato;
+  outline: solid 3px black;
+  line-height: 3rem;
+  text-align: center;
+}
+header{
+  float: left;
+}
+@media (max-width: 400px) {
+  header{
+    clear: float;
+  }
+
+  h1{
+    padding: 0;
+    margin: 0;
+  }
+
+  h2{
+    display: inline-block;
+    line-height: 15px;
+    /* margin: 1rem 0; */
+  }  
+
+  .quadrado{
+    width: 100px;
+    height: 100px;  
+  }
+
+  .grid{
+  max-width: max-content;  
+  margin: 5px auto;  
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  }
+
+  .alerta{
+    line-height: 5rem;
+  }
+}
